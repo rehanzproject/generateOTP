@@ -22,11 +22,7 @@
     <script>
         let getVal = document.getElementById("getVal")
         function generateOTP(){
-            const a = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            const b = "abcdefghijklmnopqrstuvwxyz"
-            const c = "0123456789"
-            let data = a + b + c 
-
+            const data = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" 
             let x = ""
             for (let y = 0; y <= 6 ; y++ ){
                 x += data[~~(Math.random() * data.length)]
